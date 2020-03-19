@@ -1,0 +1,119 @@
+{
+    "category":{
+      
+        "stationary": [
+        {
+          "id": "1",
+          "name": "Camlin Office Highlighter",
+          "price":95,
+          "avail":3,
+          "rate":"4.2",
+          "image": "./images/category/stationary/highlighter.jpg"
+        },
+        {
+            "id": "2",
+            "name": "Natraj Ball Pen",
+            "price":240,
+            "avail":2,
+            "rate":"4.4",
+            "image": "./images/category/stationary/natraj.jpg"
+          },
+          {
+            "id": "3",
+            "name": "Camel Student Poster Colours",
+            "price":136,
+            "avail":0,
+            "rate":"4.3",
+            "image": "./images/category/stationary/poster.jpg"
+          }
+        ],
+        
+        
+        "home": [
+            {
+              "id": "1",
+              "name": "Art Painting",
+              "price":299,
+              "avail":2,
+              "rate":"4.2",
+              "image": "./images/category/home/painting.jpg"
+            },
+            {
+                "id": "2",
+                "name": "Clock",
+                "price":470,
+                "avail":4,
+                "rate":"4.4",
+                "image": "./images/category/home/clock.jpg"
+              },
+              {
+                "id": "3",
+                "name": "Home Town 4 door Almirah",
+                "price":136,
+                "avail":0,
+                "rate":"4.3",
+                "image": "./images/category/home/wardrobe.jpg"
+              }
+            ],
+
+
+            "electronics": [
+                {
+                  "id": "1",
+                  "name": "Redmi 8",
+                  "price":8199,
+                  "avail":2,
+                  "rate":"4.2",
+                  "image": "./images/category/electronics/redmi.jpg"
+                },
+                {
+                    "id": "2",
+                    "name": "watch",
+                    "price":19999,
+                    "avail":1,
+                    "rate":"4.4",
+                    "image": "./images/category/electronics/watch.jpg"
+                  },
+                  {
+                    "id": "3",
+                    "name": "Bluetooth Speaker",
+                    "price":499,
+                    "avail":1,
+                    "rate":"4.3",
+                    "image": "./images/category/electronics/speaker.jpg"
+                  }
+                ],
+
+
+
+
+             
+            "sports": [
+                {
+                  "id": "1",
+                  "name": "Ceat hitman Bat",
+                  "price":359,
+                  "avail":2,
+                  "rate":"4.7",
+                  "image": "./images/category/sport/bat.jpg"
+                },
+                {
+                    "id": "2",
+                    "name": "Hard Ball",
+                    "price":149,
+                    "avail":2,
+                    "rate":"4.1",
+                    "image": "./images/category/sport/ball.jpg"
+                  },
+                  {
+                    "id": "3",
+                    "name": "Yonex Shuttle",
+                    "price":389,
+                    "avail":1,
+                    "rate":"4.9",
+                    "image": "./images/category/sport/shuttle.jpg"
+                  }
+                ]   
+      
+    }
+  }
