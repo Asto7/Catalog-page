@@ -6,25 +6,28 @@
           "id": "1",
           "name": "Camlin Office Highlighter",
           "price":95,
+          "color":["Red","Green","Yellow","Black"],
           "avail":3,
           "rate":"4.2",
-          "image": "./images/category/stationary/highlighter.jpg"
+          "image": "/images/category/stationary/highlighter.jpg"
         },
         {
             "id": "2",
             "name": "Natraj Ball Pen",
             "price":240,
+            "color":["Red","Green","Yellow","Black"],
             "avail":2,
             "rate":"4.4",
-            "image": "./images/category/stationary/natraj.jpg"
+            "image": "/images/category/stationary/natraj.jpg"
           },
           {
             "id": "3",
             "name": "Camel Student Poster Colours",
             "price":136,
+            "color":["Red","Green","Yellow","Black"],
             "avail":0,
             "rate":"4.3",
-            "image": "./images/category/stationary/poster.jpg"
+            "image": "/images/category/stationary/poster.jpg"
           }
         ],
         
@@ -34,25 +37,28 @@
               "id": "1",
               "name": "Art Painting",
               "price":299,
+              "color":["Red","Green","Yellow","Black"],
               "avail":2,
               "rate":"4.2",
-              "image": "./images/category/home/painting.jpg"
+              "image": "/images/category/home/painting.jpg"
             },
             {
                 "id": "2",
                 "name": "Clock",
                 "price":470,
+                "color":["Red","Green","Yellow","Black"],
                 "avail":4,
                 "rate":"4.4",
-                "image": "./images/category/home/clock.jpg"
+                "image": "/images/category/home/clock.jpg"
               },
               {
                 "id": "3",
                 "name": "Home Town 4 door Almirah",
                 "price":136,
+                "color":["Red","Green","Yellow","Black"],
                 "avail":0,
                 "rate":"4.3",
-                "image": "./images/category/home/wardrobe.jpg"
+                "image": "/images/category/home/wardrobe.jpg"
               }
             ],
 
@@ -62,25 +68,29 @@
                   "id": "1",
                   "name": "Redmi 8",
                   "price":8199,
+                  "description":"4 GB RAM | 64 GB ROM | Expandable Upto 512 GB 15.8 cm (6.22 inch) HD+ Display 12MP + 2MP | 8MP Front Camera 5000 mAh Battery    Qualcomm Snapdragon 439 Processor",
+                  "color":["Red","Green","Yellow","Black"],
                   "avail":2,
                   "rate":"4.2",
-                  "image": "./images/category/electronics/redmi.jpg"
+                  "image": "/images/category/electronics/redmi.jpg"
                 },
                 {
                     "id": "2",
                     "name": "watch",
                     "price":19999,
+                    "color":["Red","Green","Yellow","Black"],
                     "avail":1,
                     "rate":"4.4",
-                    "image": "./images/category/electronics/watch.jpg"
+                    "image": "/images/category/electronics/watch.jpg"
                   },
                   {
                     "id": "3",
                     "name": "Bluetooth Speaker",
                     "price":499,
+                    "color":["Red","Green","Yellow","Black"],
                     "avail":1,
                     "rate":"4.3",
-                    "image": "./images/category/electronics/speaker.jpg"
+                    "image": "/images/category/electronics/speaker.jpg"
                   }
                 ],
 
@@ -93,25 +103,28 @@
                   "id": "1",
                   "name": "Ceat hitman Bat",
                   "price":359,
+                  "color":["Red","Green","Yellow","Black"],
                   "avail":2,
                   "rate":"4.7",
-                  "image": "./images/category/sport/bat.jpg"
+                  "image": "/images/category/sport/bat.jpg"
                 },
                 {
                     "id": "2",
                     "name": "Hard Ball",
                     "price":149,
+                    "color":["Red","Green","Yellow","Black"],
                     "avail":2,
                     "rate":"4.1",
-                    "image": "./images/category/sport/ball.jpg"
+                    "image": "/images/category/sport/ball.jpg"
                   },
                   {
                     "id": "3",
                     "name": "Yonex Shuttle",
                     "price":389,
+                    "color":["Red","Green","Yellow","Black"],
                     "avail":1,
                     "rate":"4.9",
-                    "image": "./images/category/sport/shuttle.jpg"
+                    "image": "/images/category/sport/shuttle.jpg"
                   }
                 ]   
       

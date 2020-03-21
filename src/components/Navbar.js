@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import SideNav, { Toggle, Nav, NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
+import SideNav, {  NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 import Footer from './footer'
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 
@@ -29,7 +29,7 @@ class SideNavPage extends React.Component {
         
         <NavItem eventKey="category">
             <NavIcon>
-                <Link style={{textDecoration:"none"}} to="/category"><i class="fa fa-sitemap" aria-hidden="true" style={{ fontSize: '1.75em' }}></i></Link>
+                <Link style={{textDecoration:"none"}} to="/category"><i className="fa fa-sitemap" aria-hidden="true" style={{ fontSize: '1.75em' }}></i></Link>
             </NavIcon>
     
             <NavText>
@@ -66,7 +66,7 @@ class SideNavPage extends React.Component {
         <NavItem eventKey="cart">
                     <NavIcon>
                     <Link style={{textDecoration:"none"}} to="/cart">
-                        <i class="fa fa-cart-plus" style={{ fontSize: '1.75em' }} aria-hidden="true"></i>
+                        <i className="fa fa-cart-plus" style={{ fontSize: '1.75em' }} aria-hidden="true"></i>
                     </Link>    
                     </NavIcon>
                     <NavText>
@@ -79,7 +79,7 @@ class SideNavPage extends React.Component {
         <NavItem eventKey="history">
                     <NavIcon>
                     <Link style={{textDecoration:"none"}} to="/history">
-                        <i class="fa fa-history" style={{ fontSize: '1.75em' }} aria-hidden="true"></i>
+                        <i className="fa fa-history" style={{ fontSize: '1.75em' }} aria-hidden="true"></i>
                     </Link>    
                     </NavIcon>
                     <NavText>

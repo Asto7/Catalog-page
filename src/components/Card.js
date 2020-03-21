@@ -1,71 +1,67 @@
 import React, { Component } from 'react'
+import '../style/productCard.css'
+import {connect} from 'react-redux';
+import {Link} from 'react-router-dom'
 
-export default class Card extends Component {
+
+class Card extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = props.data;
+  }
+
+  removeCart=()=>{
+    this.props.remove(this.props.data);
+}
+
     render() {
         return (
-<div className="Items">
-        <div className="center">
+    <div style={{margin:"2em 0em"}}className="col-lg-12 ">
+      <div className="card"><br/>
+        
+        <div className="row">
 
-            <div className="card green">
-                    <div className="additional">
-                       
-                        <div className="user-card">
-                            <div className="level center">
-                            Level 13
-                            </div>
-                            <div className="points center">
-                            5,312 Points
-                            </div>
-                        </div>
-                       
-                        <div className="more-info">
-                            <h1>Jane Doe</h1>
-                            
-                            <div className="coords">
-                                <span>Group Name</span>
-                                <span>Joined January 2019</span>
-                            </div>
-                            
-                            <div className="coords">
-                                <span>Position/Role</span>
-                                <span>City, Country</span>
-                            </div>
-                            
-                            <div className="stats">
-                                    <div>
-                                        <div className="title">Awards</div>
-                                        <i className="fa fa-trophy"></i>
-                                        <div className="value">2</div>
-                                    </div>
-                                    <div>
-                                        <div className="title">Matches</div>
-                                        <i className="fa fa-gamepad"></i>
-                                        <div className="value">27</div>
-                                    </div>
-                                    <div>
-                                        <div className="title">Pals</div>
-                                        <i className="fa fa-group"></i>
-                                        <div className="value">123</div>
-                                    </div>
-                                    <div>
-                                        <div className="title">Coffee</div>
-                                        <i className="fa fa-coffee"></i>
-                                        <div className="value infinity">∞</div>
-                                    </div>
-                            </div>
-                        </div>
-                        </div>
-                        <div className="general">
-                        <h1>Jane Doe</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a volutpat mauris, at molestie lacus. Nam vestibulum sodales odio ut pulvinar.</p>
-                        <span className="more">Mouse over the card for more info</span>
-                        </div>
-                    </div>
+          <div className="col-xs-12 col-lg-4 col-md-6 col-sm-7">
+            <center><div><img  style={{maxHeight:"15em",width:"auto",maxWidth:"100%"}} className="card-img" src={this.state.image} alt="Vans"/></div></center>
+          </div>  
 
+          
+          <div className="col-xs-12 col-lg-8 col-md-6 col-sm-5">
+                  <div  className="card-body">        
+                    <h4 className="card-title">{this.state.name}</h4>
+                  
+        <h6 className="card-subtitle mb-2 text-muted">Stock Availble: {this.state.avail} | {this.state.rate}⭐</h6>
+                  
+                    <p className="card-text">
+                    {this.state.description}
+                    </p>
                     
+                      <div className="buy d-flex justify-content-between align-items-center">
+                        <div className="price text-success"><h5 className="mt-4">₹{this.state.price}</h5></div>
+                        <a onClick={this.removeCart} style={{overflowX:"hidden"}} href="/cart" className="btn btn-danger mt-3"><i className="fa fa-shopping-cart"></i>Discard</a>
+                      </div>
+                  </div>
+          </div>  
+
+
         </div>
 
-</div>
-        )
+
+
+
+      </div>
+    </div>
+
+)
     }
 }
+
+const mapDispatchToProps=(dispatch)=>{
+    return {
+        remove:(datas)=>{dispatch({type:"DELET",data:datas})}
+    }
+}
+
+
+export default connect(null,mapDispatchToProps)(Card)
