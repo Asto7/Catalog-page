@@ -3,7 +3,6 @@ import './App.css';
 import {BrowserRouter,Route,Switch,Redirect} from 'react-router-dom'
 import SideNavPage from './components/Navbar';
 import Home from './components/Home';
-import Category from './components/Category';
 import Cart from './components/Cart';
 import Search from './components/Search';
 
@@ -23,8 +22,6 @@ function App() {
                         <Container>
                               <Switch>
                                     <Route exact path="/" component={Home}/>
-                                    
-                                    <Route exact path="/category" component={Category}/>
                                     
                                     <Route exact path="/cart" component={Cart}/>
 

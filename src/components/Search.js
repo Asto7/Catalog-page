@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import SearchCard from './searchCard'
+import Filter from './Filter'
 import axios from 'axios';
 import nextId from "react-id-generator";
 const stringSimilarity = require('string-similarity');
@@ -62,13 +63,14 @@ export default class Search extends Component {
         return (
             <div>
                 <input onChange={this.getNew} placeholder="search" style={{borderRadius:"10em",color:"black",textAlign:"center",margin:"2em 0px 0px 0px", width:"50%",height:"2em"}} type="text"></input>          
-                
                 {(visible === true) ? ((type === 0) ?<div style={{marginTop:"2em"}} className="alert alert-primary" role="alert">Added to Cart!</div> : <div style={{marginTop:"2em"}} className="alert alert-danger" role="alert">Sorry this i!em is out Of Stock</div>):null}
             
+
+                    {/* <Filter/>             */}
                     <div className="CATE row">                 
                                     {list.map(data=>{
                                         return  <SearchCard key={data.name} Now={this.Now} data={data}/>
-                                    })
+                                             })
                                     }
                     </div>
           

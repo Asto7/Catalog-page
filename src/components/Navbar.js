@@ -37,11 +37,11 @@ class SideNavPage extends React.Component {
         
         <NavItem eventKey="category">
             <NavIcon>
-                <Link style={{textDecoration:"none"}} to="/category"><i className="fa fa-sitemap" aria-hidden="true" style={{ fontSize: '1.75em' }}></i></Link>
+               <i className="fa fa-sitemap" aria-hidden="true" style={{ fontSize: '1.75em' }}></i>
             </NavIcon>
     
             <NavText>
-                <Link style={{textDecoration:"none"}} to="/category"> Category</Link>
+                Categories
             </NavText>
 
 
@@ -85,7 +85,7 @@ class SideNavPage extends React.Component {
 
 
 
-        <NavItem eventKey="history">
+        {/* <NavItem eventKey="history">
                     <NavIcon>
                     <Link style={{textDecoration:"none"}} to="/history">
                         <i className="fa fa-history" style={{ fontSize: '1.75em' }} aria-hidden="true"></i>
@@ -94,7 +94,7 @@ class SideNavPage extends React.Component {
                     <NavText>
                        <Link style={{textDecoration:"none"}} to="/history">Order History</Link>
                     </NavText>
-        </NavItem>
+        </NavItem> */}
 
 
 
@@ -107,7 +107,9 @@ class SideNavPage extends React.Component {
                         
                     </NavIcon>
                     <NavText>
-                        Search
+                      <Link style={{textDecoration:"none"}} to="/search">
+                         Search
+                        </Link>    
                     </NavText>
         </NavItem>
 
