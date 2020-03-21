@@ -1,6 +1,6 @@
 
 ## React-Redux PWA 
-This project is live on (https://shopcartasto.firebaseapp.com/){https://shopcartasto.firebaseapp.com/}
+This project is live on https://shopcartasto.firebaseapp.com/
 
 
 
