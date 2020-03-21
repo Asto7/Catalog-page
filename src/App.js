@@ -5,6 +5,8 @@ import SideNavPage from './components/Navbar';
 import Home from './components/Home';
 import Category from './components/Category';
 import Cart from './components/Cart';
+import Search from './components/Search';
+
 import Renderer from './components/Renderer';
 
 import Pnf from './components/404';
@@ -30,6 +32,8 @@ function App() {
                                     render={({match}) => (<Renderer id={match.params.id}/>)}
                                     />
 
+<Route exact path="/search" component={Search}/>
+                                    
                                     <Route path="/404" component={Pnf}/>
                                     
                                     <Redirect to="/404" />

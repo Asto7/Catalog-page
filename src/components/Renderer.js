@@ -14,8 +14,8 @@ export default class Renderer extends Component {
         };
     }
     
-    Now=()=>{
-        this.setState({type:0,visible:true});
+    Now=(a)=>{
+        this.setState({type:a,visible:true});
         setTimeout(()=>{this.setState({visible:false});},1000);
     }
     
@@ -26,7 +26,7 @@ export default class Renderer extends Component {
     }
 
     componentDidMount(){
-        document.getElementsByTagName('body')[0].style.backgroundColor="white";
+        document.getElementsByTagName('body')[0].style.backgroundColor="#F1F3F6";
         this.fillData();
     }
 
@@ -50,7 +50,7 @@ export default class Renderer extends Component {
 
         return (
          <div>
-            {(visible === true) ? ((type === 0) ?<div style={{marginTop:"2em"}}class="alert alert-primary" role="alert">Added to Cart!</div> : <div class="alert alert-primary" role="alert">Sorry this i!em is out Of stock</div>):null}
+            {(visible === true) ? ((type === 0) ?<div style={{marginTop:"2em"}} className="alert alert-primary" role="alert">Added to Cart!</div> : <div style={{marginTop:"2em"}} className="alert alert-danger" role="alert">Sorry this i!em is out Of Stock</div>):null}
 
             <div className="CATE row">
                     {list}

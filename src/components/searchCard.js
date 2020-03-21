@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import '../style/productCard.css'
 import {connect} from 'react-redux';
 
-class ProductCard extends Component {
+class SearchCard extends Component {
 
   constructor(props) {
     super(props);
@@ -55,14 +55,6 @@ class ProductCard extends Component {
         {this.state.description?<p dangerouslySetInnerHTML={{ __html: `${this.state.description}` }} className="card-text"/>:null}
 
                     
-                      {/* <div className="options d-flex flex-fill">
-                        <select className="custom-select mr-1">
-                            <option selected>Color</option>
-                            <option value="1">Green</option>
-                            <option value="2">Blue</option>
-                            <option value="3">Red</option>
-                        </select>
-                      </div> */}
                     
                       <div className="buy d-flex justify-content-between align-items-center">
                         <div className="price text-success"><h5 className="mt-4">₹{this.state.price}</h5></div>
@@ -104,4 +96,4 @@ const mapStateToProps=(state,props)=>{
 }
 
 
-export default connect(mapStateToProps,mapDispatchToProp)(ProductCard)
+export default connect(mapStateToProps,mapDispatchToProp)(SearchCard)

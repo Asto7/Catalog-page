@@ -5,17 +5,13 @@ import * as serviceWorker from './serviceWorker';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 import rootReducer from './reducer/rootReducer';
+let persistedState={data:[]};
 
-let persistedState;
+// console.log(localStorage.getItem('ABC')!=undefined);
 
-if(localStorage.getItem('reduxState')!=null)
-  persistedState=((JSON.parse(localStorage.getItem('reduxState'))));
-
-else 
-  persistedState={data:[]};
+if(localStorage.getItem('ABC')!=null && localStorage.getItem('ABC')!=undefined)
+  persistedState=((JSON.parse(localStorage.getItem('ABC'))));
   
-  
-console.log(localStorage.getItem('reduxState')==null)
 
 const store = createStore(
     rootReducer, 
@@ -23,7 +19,7 @@ const store = createStore(
   )
 
 store.subscribe(()=>{
-    localStorage.setItem('reduxState', JSON.stringify(store.getState()))
+    localStorage.setItem('ABC', JSON.stringify(store.getState()))
   })
 
 

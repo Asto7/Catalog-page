@@ -6,13 +6,21 @@ import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 
 
 class SideNavPage extends React.Component {
+
+    constructor(props){
+        super(props);
+        this.state={
+            expand:false
+        }
+    }
+
     render() {
         return (
-<SideNav style={{backgroundColor:"#191919",position:"fixed"}}
+<SideNav expanded={this.state.expand} style={{backgroundColor:"#191919",position:"fixed"}}
     onSelect={(selected) => {
     }}>
     
-    <SideNav.Toggle />
+    <SideNav.Toggle onClick={()=>{this.setState({expand:!this.state.expand})}} />
     <SideNav.Nav defaultSelected="home">
         
         
@@ -58,6 +66,7 @@ class SideNavPage extends React.Component {
                      <Link style={{textDecoration:"none"}} to="/category/sports">Sports</Link> 
                 </NavText>
             </NavItem>
+
         
         </NavItem>
 
@@ -87,6 +96,20 @@ class SideNavPage extends React.Component {
                     </NavText>
         </NavItem>
 
+
+
+
+        <NavItem eventKey="search">
+                    <NavIcon>
+                        <Link style={{textDecoration:"none"}} to="/search">
+                            <i  className="fa fa-search" style={{ fontSize: '1.75em' }} aria-hidden="true"></i>
+                        </Link>    
+                        
+                    </NavIcon>
+                    <NavText>
+                        Search
+                    </NavText>
+        </NavItem>
 
 
         <NavItem style={{position:"absolute",top:"28em"}} eventKey="footer">

@@ -7,6 +7,7 @@
           "name": "Camlin Office Highlighter",
           "price":95,
           "color":["Red","Green","Yellow","Black"],
+          "description":"<ul><li >Color: Orange, Green, Yellow, Pink, Blue</li><li >Tip Design: Chisel Tip</li><li >Marker Type: Fluorescent Ink</li></ul>",
           "avail":3,
           "rate":"4.2",
           "image": "/images/category/stationary/highlighter.jpg"
@@ -16,6 +17,7 @@
             "name": "Natraj Ball Pen",
             "price":240,
             "color":["Red","Green","Yellow","Black"],
+            "description":"<ul><li >Body Color: Multicolor</li><li >Made of Plastic</li><li >Solid Body Type</li><li >Pack of 100</li></ul>",
             "avail":2,
             "rate":"4.4",
             "image": "/images/category/stationary/natraj.jpg"
@@ -25,6 +27,7 @@
             "name": "Camel Student Poster Colours",
             "price":136,
             "color":["Red","Green","Yellow","Black"],
+            "description":"<ul><li >Type: Poster Color</li><li >Series: Student Poster</li><li >Color: Multicolor</li></ul>",
             "avail":0,
             "rate":"4.3",
             "image": "/images/category/stationary/poster.jpg"
@@ -38,6 +41,7 @@
               "name": "Art Painting",
               "price":299,
               "color":["Red","Green","Yellow","Black"],
+              "description":"<ul><li >Theme: Modern Art</li><li >Water Resistant</li><li >W x H: 17 inch x 17 inch</li></ul>",
               "avail":2,
               "rate":"4.2",
               "image": "/images/category/home/painting.jpg"
@@ -47,6 +51,7 @@
                 "name": "Clock",
                 "price":470,
                 "color":["Red","Green","Yellow","Black"],
+                "description":"<center><table ><tbody><tr ><td >Sales Package</td><td ><ul><li >1 wall clock</li></ul></td></tr><tr ><td >Model Number</td><td ><ul><li >770-Ganesha-Gold</li></ul></td></tr><tr ><td >Model Name</td><td ><ul><li >Big Ganesha</li></ul></td></tr><tr ><td >Pack of</td><td ><ul><li >1</li></ul></td></tr><tr ><td >Dial Color</td><td ><ul><li >White</li></ul></td></tr></tbody></table></center>",
                 "avail":4,
                 "rate":"4.4",
                 "image": "/images/category/home/clock.jpg"
@@ -56,6 +61,7 @@
                 "name": "Home Town 4 door Almirah",
                 "price":136,
                 "color":["Red","Green","Yellow","Black"],
+                "description":"<ul><li >Type: Almirah</li><li >Contemporary &amp; Modern Style</li><li >Suitable For: Bedroom</li><li >W x H x D: 160 cm x 182.8 cm x 46.2 cm (5 ft 2 in x 5 ft 11 in x 1 ft 6 in)</li><li >Knock Down - Delivered in non-assembled pieces, installation by service partner</li></ul>",
                 "avail":0,
                 "rate":"4.3",
                 "image": "/images/category/home/wardrobe.jpg"
@@ -79,6 +85,7 @@
                     "name": "watch",
                     "price":19999,
                     "color":["Red","Green","Yellow","Black"],
+                    "description":"<ul><li >With Call Function</li><li >Touchscreen</li><li >Watchphone, Notifier, Fitness &amp; Outdoor, Safety &amp; Security</li><li >NA</li></ul>",
                     "avail":1,
                     "rate":"4.4",
                     "image": "/images/category/electronics/watch.jpg"
@@ -88,6 +95,7 @@
                     "name": "Bluetooth Speaker",
                     "price":499,
                     "color":["Red","Green","Yellow","Black"],
+                    "description":"<ul><li >Power Output (RMS): 160 W</li><li >Power Source: AC Adapter</li><li >Bluetooth Version: 5</li><li >Wireless range: 10 m</li><li >Wireless music streaming via Bluetooth</li><li >Memory Card Slot</li></ul>",
                     "avail":1,
                     "rate":"4.3",
                     "image": "/images/category/electronics/speaker.jpg"
@@ -104,6 +112,7 @@
                   "name": "Ceat hitman Bat",
                   "price":359,
                   "color":["Red","Green","Yellow","Black"],
+                  "description":"<ul><li >Age Group 15+ Yrs</li><li >Blade Made of Poplar Willow</li><li >Advanced, Training Playing Level</li><li >Bat Grade: Grade 2</li><li >Sport Type: Cricket</li><li >Weight Range 1.2 kg</li></ul>",
                   "avail":2,
                   "rate":"4.7",
                   "image": "/images/category/sport/bat.jpg"
@@ -113,6 +122,7 @@
                     "name": "Hard Ball",
                     "price":149,
                     "color":["Red","Green","Yellow","Black"],
+                    "description":"<ul><li >Cricket Tennis Ball</li><li >Water Resistant</li><li >Outer Material: Wool fibers(Interlocked)</li><li >Core Material: Good quality centre construction encased with layers of top quality Portuguese Rubberwound with 100 percent wool</li><li >Weight: 138 g</li></ul>",
                     "avail":2,
                     "rate":"4.1",
                     "image": "/images/category/sport/ball.jpg"
@@ -122,6 +132,7 @@
                     "name": "Yonex Shuttle",
                     "price":389,
                     "color":["Red","Green","Yellow","Black"],
+                    "description":"The Yonex Mavis 350 green cap nylon shuttlecock has been precision built to offer superior flight performance once it strikes the racquet. It has been designed to allow you to serve at a variety of speeds including slow, fast and medium serves. Whether you are using it for everyday practice or for a competitive game, this Yonex Mavis 350 green shuttlecock moves accurately and reliably during the badminton match. The bright yellow colour of the shuttlecock makes it easy to spot and locate and ensures you never miss out on a shot",
                     "avail":1,
                     "rate":"4.9",
                     "image": "/images/category/sport/shuttle.jpg"

@@ -12,18 +12,24 @@ const rootReducer=(state=initState,action)=>{
     }
 
     else if(action.type=="add"){
-        let flag=1;
+    let flag=1;
         
         for(let i=0;i<state.data.length;i++){
             if(state.data[i].id==action.data.id&&state.data[i].name==action.data.name){
+                state.data[i].avail++;
                 flag=0;
+                break;
             }
         }
 
         if(flag){
-            state.data.push({...action.data});
-            console.log(state)
+            let A={...action.data,avail:1}
+            state.data.push(A);
             return {...state}
+        }
+
+        else{
+            return state;
         }
 
         }
