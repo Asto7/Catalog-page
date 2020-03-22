@@ -2,7 +2,8 @@
 ## React-Redux PWA 
 This project is live on https://shopcartasto.firebaseapp.com/
 
-
+## Build 
+Run $npm run build to build the app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
