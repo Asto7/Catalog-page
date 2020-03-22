@@ -23,7 +23,7 @@ const rootReducer=(state=initState,action)=>{
         }
 
         if(flag){
-            let A={...action.data,avail:1}
+            let A={...action.data,avail:1,MAX:action.data.avail}
             state.data.push(A);
             return {...state}
         }
@@ -33,9 +33,39 @@ const rootReducer=(state=initState,action)=>{
         }
 
         }
-    
-    else 
+        else if(action.type=="minus"){
 
+            let quantity=1;
+            for(let i=0;i<state.data.length;i++){
+                if(state.data[i].name==action.data.name){
+                    quantity=Number(state.data[i].avail)-1;
+                    if(quantity==0){
+                        quantity=1;
+                    }
+                    state.data[i].avail=quantity;
+            }
+            }
+            return state;
+        } 
+    
+
+    else if(action.type=="plus"){
+
+        let quantity=1;
+        for(let i=0;i<state.data.length;i++){
+            if(state.data[i].name==action.data.name){
+                quantity=Number(state.data[i].avail)+1;
+                if(quantity>state.data[i].MAX){
+                    quantity=state.data[i].MAX;
+                }
+                state.data[i].avail=quantity;
+        }
+        }
+        return state;
+    } 
+
+
+    else 
     return state;
 }
 

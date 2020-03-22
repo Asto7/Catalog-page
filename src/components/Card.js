@@ -9,14 +9,24 @@ class Card extends Component {
   constructor(props) {
     super(props);
     this.state = props.data;
+    console.log(this.props.data)
   }
 
   componentDidMount(){
     this.props.updatePrice(this.state.price,this.state.avail);
   }
+
   removeCart=()=>{
     this.props.remove(this.props.data);
-    }
+  }
+  minuS=()=>{
+    this.props.minus(this.props.data);
+  }
+
+
+  pluS=()=>{    
+    this.props.plus(this.props.data);
+  }
 
     render() {
         return (
@@ -34,11 +44,11 @@ class Card extends Component {
                   <div  className="card-body">        
                     <h4 className="card-title">{this.state.name}</h4>
                   
-        <h6 className="card-subtitle mb-2 text-muted">Quantity: {this.state.avail} | {this.state.rate}⭐</h6>
+        <h6 className="card-subtitle mb-2 text-muted">Quantity: <span style={{color:"blue",fontWeight:"700"}}>{this.state.avail}</span> | {this.state.rate}⭐</h6>
                   
         {this.state.description?<p dangerouslySetInnerHTML={{ __html: `${this.state.description}` }} className="card-text"/>:null}
 
-                  {/* <div><div  style={{fontWeight:"700",cursor:"pointer",display:"inline",marginRight:"0.5em"}}>-</div><input disabled style={{width:"2em",textAlign:"center"}} type="text"/><div  style={{fontWeight:"700",cursor:"pointer",display:"inline",marginLeft:"0.5em"}}>+</div></div> */}
+                  <div><a href="/cart" style={{textDecoration:"none"}} onClick={this.minuS} style={{fontWeight:"700",cursor:"pointer",display:"inline",marginRight:"0.5em"}}>-</a><input value={this.state.avail} disabled style={{width:"2em",textAlign:"center"}} type="text"/><a href="/cart" onClick={this.pluS} style={{fontWeight:"700",cursor:"pointer",display:"inline",marginLeft:"0.5em"}}>+</a></div>
 
                       <div className="buy d-flex justify-content-between align-items-center">
                                  <div className="price text-success"><h5 className="mt-4">₹{this.state.price} X{this.state.avail }</h5>
@@ -62,7 +72,9 @@ class Card extends Component {
 
 const mapDispatchToProps=(dispatch)=>{
     return {
-        remove:(datas)=>{dispatch({type:"DELET",data:datas})}
+        remove:(datas)=>{dispatch({type:"DELET",data:datas})},
+        minus:(datas)=>{dispatch({type:"minus",data:datas})},
+        plus:(datas)=>{dispatch({type:"plus",data:datas})}
     }
 }
 

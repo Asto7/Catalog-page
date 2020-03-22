@@ -50,20 +50,10 @@ class ProductCard extends Component {
                   <div  className="card-body">        
                     <h4 className="card-title">{this.state.name}</h4>
                   
-        <h6 className="card-subtitle mb-2 text-muted">Stock Availble: {this.state.avail} | {this.state.rate}⭐</h6>
+        <h6 className="card-subtitle mb-2 text-muted">Stock Availble: {this.state.avail!=0?<span style={{color:"green",fontWeight:"700"}}>{this.state.avail}</span>:<span style={{color:"crimson",fontWeight:"700"}}>{this.state.avail}</span>} | {this.state.rate}⭐</h6>
                   
         {this.state.description?<p dangerouslySetInnerHTML={{ __html: `${this.state.description}` }} className="card-text"/>:null}
 
-                    
-                      {/* <div className="options d-flex flex-fill">
-                        <select className="custom-select mr-1">
-                            <option selected>Color</option>
-                            <option value="1">Green</option>
-                            <option value="2">Blue</option>
-                            <option value="3">Red</option>
-                        </select>
-                      </div> */}
-                    
                       <div className="buy d-flex justify-content-between align-items-center">
                         <div className="price text-success"><h5 className="mt-4">₹{this.state.price}</h5></div>
                         {this.state.avail==0?
